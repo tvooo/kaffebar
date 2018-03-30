@@ -1,4 +1,11 @@
-import { Button, GhostButton, BareButton, Input, Badge } from "./elements";
-import { Layout } from "./layout";
+import {
+  Button,
+  GhostButton,
+  BareButton,
+  Input,
+  Badge,
+  Link
+} from "./elements";
+import { Layout, Flex } from "./layout";
 
-export { Button, GhostButton, BareButton, Input, Layout, Badge };
+export { Button, GhostButton, BareButton, Input, Layout, Badge, Link, Flex };
