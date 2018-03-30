@@ -8,7 +8,7 @@
     "build": "babel src -d lib",
     "watch": "yarn build --watch",
     "prepublishOnly": "yarn build",
-    "text": "exit 0"
+    "test": "exit 0"
   },
   "dependencies": {
     "palx": "^1.0.3"
