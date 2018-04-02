@@ -11,13 +11,16 @@
     "test": "exit 0"
   },
   "dependencies": {
+    "lodash.clamp": "^4.0.3",
     "palx": "^1.0.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "prettier": "^1.11.1",
-    "react": "^16.2.0",
+    "react": "^16.3.0",
     "styled-components": "^3.2.3"
   },
   "peerDependencies": {

@@ -8,7 +8,7 @@ const Link = styled.a`
   display: inline-block;
   color: ${colors.blue};
   cursor: pointer;
-  ${"" /* border-bottom: 2px solid ${colors.blue}; */} text-decoration: underline;
+  text-decoration: underline;
 `;
 
 export default Link;

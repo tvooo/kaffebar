@@ -8,10 +8,9 @@ const Badge = styled.span`
   background-color: ${props => colors[props.color]};
   border-radius: ${radius};
   padding: 0.4em 0.8em;
-  color: white;
+  color: white
   font-weight: bold;
 
-  text-transform: uppercase;
   line-height: 1.25em;
   font-size: 1rem;
   display: inline-block;
