@@ -27,7 +27,7 @@ const Button = styled.button`
   }
 `;
 
-const GhostButton = Button.extend`
+const GhostButton = styled(Button)`
     border-color: ${colors.grey2};
     background-color: ${colors.grey2};
     color: ${colors.text};

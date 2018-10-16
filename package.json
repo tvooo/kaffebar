@@ -1,30 +1,32 @@
 {
   "name": "kaffebar",
   "version": "1.2.0",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "author": "Tim von Oldenburg <tim@tvooo.de>",
   "license": "MIT",
   "scripts": {
-    "build": "babel src -d lib",
+    "build": "babel src -d dist",
     "watch": "yarn build --watch",
     "prepublishOnly": "yarn build",
     "test": "exit 0"
   },
   "dependencies": {
     "lodash.clamp": "^4.0.3",
-    "palx": "^1.0.3"
+    "palx": "^1.0.3",
+    "styled-system": "^3.1.11"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "prettier": "^1.11.1",
-    "react": "^16.3.0",
-    "styled-components": "^3.2.3"
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "prettier": "^1.14.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "styled-components": "^4.0.0"
   },
   "peerDependencies": {
-    "react": "^16.2.0",
-    "styled-components": "^3.2.3"
+    "react": "*",
+    "styled-components": ">=4"
   }
 }
