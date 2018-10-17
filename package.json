@@ -8,7 +8,8 @@
     "build": "babel src -d dist",
     "watch": "yarn build --watch",
     "prepublishOnly": "yarn build",
-    "test": "exit 0"
+    "test": "exit 0",
+    "dev": "mdx-go docs"
   },
   "dependencies": {
     "lodash.clamp": "^4.0.3",
@@ -20,6 +21,7 @@
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
+    "mdx-go": "^2.0.0-29",
     "prettier": "^1.14.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",

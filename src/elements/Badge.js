@@ -1,19 +1,21 @@
 import styled from "styled-components";
+import { color, fontFamily } from "styled-system";
 
-import { borderWidth, radius } from "../attributes/spacing";
-import colors from "../attributes/colors";
+import { radius } from "../attributes/spacing";
 
 const Badge = styled.span`
-  font-family: sweden_sansregular, sans-serif;
-  background-color: ${props => colors[props.color]};
+  ${color}
+  ${fontFamily}
   border-radius: ${radius};
   padding: 0.4em 0.8em;
-  color: white
+  color: white;
   font-weight: bold;
-
   line-height: 1.25em;
-  font-size: 1rem;
   display: inline-block;
 `;
+
+Badge.defaultProps = {
+  fontFamily: "sans-serif"
+};
 
 export default Badge;

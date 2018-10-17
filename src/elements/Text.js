@@ -1,12 +1,14 @@
 import React from "react";
 import { typeSizes, spacing as kbSpacing } from "../attributes/spacing";
 import styled from "styled-components";
-import { space, width, fontSize, color, fontFamily } from "styled-system";
+import { space, width, fontSize, color, fontFamily, themeGet } from "styled-system";
 
 const Text = styled.div`
   ${fontFamily}
   ${fontSize}
+  color: ${themeGet("colors.text")}
   ${color}
+  line-height: 1.4em;
 `;
 //
 // const Text = ({ tag: Tag, size, children, spacing, ...rest }) => (

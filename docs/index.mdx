@@ -1,0 +1,62 @@
+import { Flex, Text, Link, Progress, Badge, Button, Input, Swatch, Card } from '../src';
+import theme from '../src/theme';
+const { colors } = theme;
+export { Root } from './components';
+
+# Kaffebar ☕️
+
+> A component library
+
+## Components
+
+### Text
+
+<Text>The quick brown fox jumps over the lazy dog</Text>
+
+<Text as="p" size={4}>The quick brown fox jumps over the lazy dog</Text>
+
+### Link
+
+<Link>The quick brown fox jumps over the lazy dog</Link>
+
+<br />
+
+<Link>Home</Link> <Link>About</Link>
+
+### Badge
+
+<Badge bg="purple">Badge</Badge>
+
+### Button
+
+<Button>Button</Button>
+<Button color="blue">Button</Button>
+<Button color="red">Button</Button>
+
+### Input
+
+<Input />
+
+### Card
+
+<Card style={{width: '300px'}}>
+  <Card.Image src="https://source.unsplash.com/random/800x800" />
+  <Card.Body>
+    <Text>A card heading</Text>
+  </Card.Body>
+</Card>
+
+## Theming
+
+### Default theme
+
+<Flex style={{flexWrap: 'wrap'}}>
+{Object.keys(colors).map(name => (
+  <Flex.Item key={name}>
+    <Card>
+      <Swatch bg={name} />
+      <Text>{name}</Text>
+    </Card>
+  </Flex.Item>
+))}
+</Flex>
