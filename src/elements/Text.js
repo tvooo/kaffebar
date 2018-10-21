@@ -1,15 +1,29 @@
 import React from "react";
 import { typeSizes, spacing as kbSpacing } from "../attributes/spacing";
 import styled from "styled-components";
-import { space, width, fontSize, color, fontFamily, themeGet } from "styled-system";
+import {
+  space,
+  width,
+  fontSize,
+  color,
+  fontFamily,
+  fontWeight,
+  themeGet
+} from "styled-system";
 
 const Text = styled.div`
   ${fontFamily}
   ${fontSize}
+  ${fontWeight}
+  ${space}
   color: ${themeGet("colors.text")}
   ${color}
   line-height: 1.4em;
 `;
+
+Text.defaultProps = {
+  fontFamily: "sans-serif"
+};
 //
 // const Text = ({ tag: Tag, size, children, spacing, ...rest }) => (
 //   <Tag

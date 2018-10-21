@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { themeGet } from "styled-system";
-import Text from './Text';
+import Text from "./Text";
 import colors from "../attributes/colors";
 
 const Link = styled(Text)`
@@ -17,7 +17,8 @@ const Link = styled(Text)`
 `;
 
 Link.defaultProps = {
-  as: 'a'
-}
+  as: "a",
+  fontFamily: "sans-serif"
+};
 
 export default Link;
