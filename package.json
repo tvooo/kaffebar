@@ -15,7 +15,7 @@
   "dependencies": {
     "lodash.clamp": "^4.0.3",
     "palx": "^1.0.3",
-    "styled-system": "^3.1.11"
+    "styled-system": "^4.0.8"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
